@@ -6,7 +6,7 @@
 /*   By: ghtourha <ghtourha@student.1337.ma>       #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/16 18:07:30 by ghtourha         #+#    #+#              */
-/*   Updated: 2026/10/22 11:55:12 by ghtourha        ###   ########.fr        */
+/*   Updated: 2026/10/26 19:16:56 by ghtourha        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (!c)
-		return ;
 	write(fd, &c, 1);
 }
