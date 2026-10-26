@@ -17,12 +17,12 @@ void	ft_putnbr_fd(int n, int fd)
 	long	nu;
 
 	nu = n;
-	if (n < 0)
+	if (nu < 0)
 	{
-		n *= -1;
+		nu *= -1;
 		write(fd, "-", 1);
 	}
-	if (n > 9)
+	if (nu > 9)
 		ft_putnbr_fd(nu / 10, fd);
 	ft_putchar_fd(nu % 10 + '0', fd);
 }

@@ -6,7 +6,7 @@
 /*   By: ghtourha <ghtourha@student.1337.ma>       #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/16 14:11:20 by ghtourha         #+#    #+#              */
-/*   Updated: 2026/10/16 14:11:20 by ghtourha        ###   ########.fr        */
+/*   Updated: 2026/10/26 15:45:59 by ghtourha        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	if (start >= ft_strlen(s))
 		return (ft_strdup(""));
+	if (ft_strlen(s) - start < len)
+		len = ft_strlen(s) - start;
 	p = malloc(len + 1);
 	if (!p)
 		return (NULL);

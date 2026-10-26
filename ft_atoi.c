@@ -6,7 +6,7 @@
 /*   By: ghtourha <ghtourha@student.1337.ma>       #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/16 14:12:03 by ghtourha         #+#    #+#              */
-/*   Updated: 2026/10/22 11:55:54 by ghtourha        ###   ########.fr        */
+/*   Updated: 2026/10/26 15:57:20 by ghtourha        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_atoi(const char *nptr)
 	{
 		nptr++;
 	}
-	while (*nptr == '-' || *nptr == '+')
+	if (*nptr == '-' || *nptr == '+')
 	{
 		if (*nptr == '-')
 			sign++;
